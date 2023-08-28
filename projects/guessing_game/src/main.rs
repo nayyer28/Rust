@@ -8,7 +8,7 @@ fn enter_guess() -> u32 {
     stdin().read_line(&mut guess).expect("Failed to read line.");
     match guess.trim().parse() {
         Ok(num) => num,
-        Err(_) => return enter_guess(),
+        Err(_) => enter_guess(),
     }
 }
 
